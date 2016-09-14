@@ -6,6 +6,7 @@
 using std::vector;
 using std::cin;
 using std::cout;
+using std::endl;
 
 class MaxMatching {
  public:
@@ -26,6 +27,14 @@ class MaxMatching {
         cin >> bit;
         adj_matrix[i][j] = (bit == 1);
       }
+     
+     for (int i = 0; i < num_left; ++i)
+     {
+      for (int j = 0; j < num_right; ++j) 
+           cout << " " <<  adj_matrix[i][j] ;
+        cout << endl;
+     }
+    
     return adj_matrix;
   }
 
